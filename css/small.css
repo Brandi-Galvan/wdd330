@@ -86,9 +86,10 @@ p {
     transition-duration: .5s;
 }
 
-h3 {
+h3, h4 {
     font-family: 'Libre Baskerville', serif;
     text-align: left;
+    color: #144106;
 }
 
 .weeklyNotes {
@@ -98,4 +99,9 @@ h3 {
 
 .activityBreak {
     margin: 35px 0 0 0;
+}
+
+.listHeader {
+    font-size: .95em;
+    margin: 0;
 }
