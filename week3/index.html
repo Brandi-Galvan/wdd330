@@ -37,7 +37,25 @@
     <ul class="weeklyNotes">
         <li><b>Object Literals</b></li>
         <li>An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, booleans, arrays, and functions. If a property's calue is a function, it is known as a method.</li>
-        <li></li>
+        <li>If a property's value is a function, it is known as a method.</li>
+        <li>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces.</li>
+        <li>Each property in an object literal is a key-value pair, separated by commas.</li>
+        <li><b>Creating Objects</b></li>
+        <li>To create an object, start with curly braces {} and assign it to a constant.</li>
+        <li>The shorthand method of creating objects if a property key is the same as a variable name that the property calue is assigned to:<br><i>const</i> ironMan = { name, realName };</li>
+        <li><b>Accessing Properties</b></li>
+        <li>ex: superman.name</li>
+        <li>ex2: superman['name']</li>
+        <li> you can use the bracket method when you want to evaluate an expression and use it as the property key:<br>superman["real" + " " + "name"]</li>
+        <li><b>Computer Properties</b></li>
+        <li>You can create objects with computed property keys, which means the Javascript code can be placed inside square brackets and the property key will be the return value of that code.</li>
+        <li>ex: <i>const</i>hulk = {name: 'Hulk', ['catch + 'Phrase']: 'Hulk Smash!'};</li>
+        <li>now the property key is named 'catchPhrase'.</li>
+        <li><b>Calling Methods</b></li>
+        <li>To call a method you can use a dot or bracket notation. It's the same as invoking a function so parentheses need to be placed.<br>ex: superman.fly() OR superman['fly']()</li>
+        <li><b>Checking if properties or methods exist</b></li>
+        <li>The "in" operator can be used to check whether an object has a particular property.<br>'city' <i>in</i> superman; would return false.</li>
+        
     </ul>
     
     <hr class="activityBreak">
