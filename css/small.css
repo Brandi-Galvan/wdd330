@@ -44,13 +44,22 @@ h2 {
     color: #144106;
 }
 
-#weekList ul li {
+#weekList {
+    margin-bottom: 30px;
+}
+
+#weekList li {
     list-style: none;
     padding-right:40px;
     font-family: 'Open Sans', sans-serif;
+    padding: 5px;
 }
 
-
+#weekList a {
+    text-decoration: none;
+    font-weight:bold;
+    color: #144106;
+}
 
 footer {
     font-size: 1rem;
@@ -80,7 +89,7 @@ p {
     color: #144106;
 }
 
-.activityLink:hover {
+.activityLink:hover, #weekList a:hover {
     cursor: pointer;
     border-bottom: 3px solid black;
     transition-duration: .5s;

@@ -1,29 +1,25 @@
 const links = [
-    {
-        label: "Week 1 Notes",
-        url: "week1/index.html"
-    },
-    {
-        label: "Week 2 Notes",
-        url: "week2/index.html"
-    },
-    {
-        label: "Week 3 Notes",
-        url: "week3/index.html"
-    }
-]
+  {
+    label: "Week 1 notes",
+    url: "week1/index.html",
+  },
+  {
+    label: "Week 2 notes",
+    url: "week2/index.html",
+  },
+  {
+    label: "Week 3 notes",
+    url: "week3/index.html",
+  },
+];
 
-window.onload = function(){
-    let ul=document.createElement('ul');
-    for(i=0;i<links.length;i++)
-    {
-        var li=document.createElement('li');
-        li.innerHTML="<a onclick='redirectTo(i)'>" + links[i].label + "</a>";
-        ul.appendChild(li);
-    }
-    document.getElementById('weekList').appendChild(ul);
-};
+links.forEach((element) => {
+  let ol = document.getElementById("weekList");
+  let li = document.createElement("li");
+  let a = document.createElement("a");
 
-redirectTo = function (param) {
-    window.location.href="week"+param+"/index.html";
-}
+  a.textContent = element.label;
+  a.setAttribute("href", element.url);
+  li.appendChild(a);
+  ol.appendChild(li);
+});
