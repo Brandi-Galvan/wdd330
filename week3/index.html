@@ -16,7 +16,7 @@
     </header>
 <main>
     <h2>WDD 330 Week 3</h2>
-    <p>This Week's Activities: <a class="activityLink" href="../week2/teamActivity.html">Team Activity</a>
+    <p>This Week's Activities: <a class="activityLink" href="../week3/teamActivity.html">Team Activity</a>
     <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
     <h3>Notes for this week</h3>
     <h4 class="listHeader">Object Methods Article</h4>
@@ -36,26 +36,42 @@
     <h4 class="listHeader">NTN 5: Objects</h4>
     <ul class="weeklyNotes">
         <li><b>Object Literals</b></li>
-        <li>An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, booleans, arrays, and functions. If a property's calue is a function, it is known as a method.</li>
-        <li>If a property's value is a function, it is known as a method.</li>
-        <li>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces.</li>
-        <li>Each property in an object literal is a key-value pair, separated by commas.</li>
+            <li>An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, booleans, arrays, and functions. If a property's calue is a function, it is known as a method.</li>
+            <li>If a property's value is a function, it is known as a method.</li>
+            <li>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces.</li>
+            <li>Each property in an object literal is a key-value pair, separated by commas.</li>
         <li><b>Creating Objects</b></li>
-        <li>To create an object, start with curly braces {} and assign it to a constant.</li>
-        <li>The shorthand method of creating objects if a property key is the same as a variable name that the property calue is assigned to:<br><i>const</i> ironMan = { name, realName };</li>
+            <li>To create an object, start with curly braces {} and assign it to a constant.</li>
+            <li>The shorthand method of creating objects if a property key is the same as a variable name that the property calue is assigned to:<br><i>const</i> ironMan = { name, realName };</li>
         <li><b>Accessing Properties</b></li>
-        <li>ex: superman.name</li>
-        <li>ex2: superman['name']</li>
-        <li> you can use the bracket method when you want to evaluate an expression and use it as the property key:<br>superman["real" + " " + "name"]</li>
+            <li>ex: superman.name</li>
+            <li>ex2: superman['name']</li>
+            <li> you can use the bracket method when you want to evaluate an expression and use it as the property key:<br>superman["real" + " " + "name"]</li>
         <li><b>Computer Properties</b></li>
-        <li>You can create objects with computed property keys, which means the Javascript code can be placed inside square brackets and the property key will be the return value of that code.</li>
-        <li>ex: <i>const</i>hulk = {name: 'Hulk', ['catch + 'Phrase']: 'Hulk Smash!'};</li>
-        <li>now the property key is named 'catchPhrase'.</li>
+            <li>You can create objects with computed property keys, which means the Javascript code can be placed inside square brackets and the property key will be the return value of that code.</li>
+            <li>ex: <i>const</i>hulk = {name: 'Hulk', ['catch + 'Phrase']: 'Hulk Smash!'};</li>
+            <li>now the property key is named 'catchPhrase'.</li>
         <li><b>Calling Methods</b></li>
-        <li>To call a method you can use a dot or bracket notation. It's the same as invoking a function so parentheses need to be placed.<br>ex: superman.fly() OR superman['fly']()</li>
-        <li><b>Checking if properties or methods exist</b></li>
-        <li>The "in" operator can be used to check whether an object has a particular property.<br>'city' <i>in</i> superman; would return false.</li>
-
+            <li>To call a method you can use a dot or bracket notation. It's the same as invoking a function so parentheses need to be placed.<br>ex: superman.fly() OR superman['fly']()</li>
+            <li><b>Checking if properties or methods exist</b></li>
+            <li>The "in" operator can be used to check whether an object has a particular property.<br>'city' <i>in</i> superman; would return false.</li>
+        <li><b>Adding Properties</b></li>
+            <li>You can add a new property/method to an object at any time in a program. Just assign a value to the new property. <br> ex: superman.city = 'Metropolis';<br> Not the superman object has a new city property.</li>
+        <li><b>Removing Properties</b></li>
+            <li>You can remove any property from an object with the delete operator.<br> ex: <i>delete</i> superman.fly</li>
+        <li><b>Nested Objects</b></li>
+            <li>You can nest an object within an object. This is known as a <i>nested object.</i></li>
+            <li>Here is an example of a nested object:<br><i>const </i>jla = {<br>superman: { realName: 'Clark Kent' },<br>batman: { realName: 'Bruce Wayne' },}</li>
+            <li>You can access the nested object by referencing each property name in order using either for or bracket notation. ex:<br>jla.wonderWoman.realName<br>ex 2: jla['flash']['realName']</li>
+        <li><b>JSON</b></li>
+            <li>A string representation of the object literal notation above. A couple of differences:</li>
+            <li>Property names must be double-quoted</li>
+            <li>Permitted values are double-quoted strings, numbers, true, false, null, arrays, and objects.</li>
+            <li>Functions are not permitted values</li>
+            <li>PARSE: the parse() method takes a string of data in JSON format and returns a JavaScript object.<br>ex: JSON.parse(batman);</li>
+            <li>STRINGIFY: The stringify() method does the opposite, taking a JavaScript object and returning a string of JSON data, as can be seen in the example.<br>JSON.stringify(wonderWoman);</li>
+        <li><b>MATH</b></li>
+            <li>Rounding methods: Math.ceil(4.2); would return 5.<br>Math.floor(4.2); would return 4.<br>Math.round(4.5); would return 5.<br>Math.pow(3, 2); would return 9.<br>Math.pow(27, 1/3); would return 3.</li>
     </ul>
     
     <hr class="activityBreak">
