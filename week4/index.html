@@ -25,8 +25,16 @@
         <li>Traditionally, when a form is submitted the information would be sent to a server where the information would be processed using a 'back end' language such as PHP or Ruby.</li>
         <li>It's becoming more possible to process the information in a form on the 'front end' before it is sent to the server.</li>
     </ul>
-    <ul class="weeklyNotes">A Searching Example
-        <li></li>
+    <ul class="weeklyNotes">Input Fields
+        <li>Some common types of form control are:<br>Input fields: including text, passwords, check boxes, radio buttons, and file uploads.<br>Select menus: for drop-down lists of options.<br>Textarea elements: for longer text entry.<br>Button elements: for submitting and resetting forms.</li>
+        <li> TEXT: The default type of input field is text. The type='text' attribute isn't required but it is advisable to use it as it makes the intended purpose of the field explicit.<br> ex: input type='text' id ='donation-amount' name='donationAmount' value='10'</li>
+        <li>PASSWORD: is used to enter passwords or secret information. It looks like type='password'<br> ex: input type='password' name='realName' id='realName'</li>
+        <li>CHECKBOX: are creating using input fields type='checkbox'. They are used to select different options that can be checked (true) or left unchecked (false)<br> ex: input type='checkbox' id='flight' value='Flight' name='powers'</li>
+        <li>RADIO: these are created using input fields with type='radio'. They allow users to check an option as true but they provide an exclusive choise of options so only one option can be selected.<br>ex: input type='radio' name='category' value='Hero' id='hero'</li>
+        <li>HIDDEN: These are not displayed by the browser, but have a 'value' attribute that can contain information that is submitted with the form. type='hidden'</li>
+        <li>FILE INPUT: These are used to upload files and most browsers will provide a brose button or similar that lets users select a file from their file system. type='file'</li>
+        <li>OTHER: There are lots of new input types included, such as 'number', 'tel', and 'color'.</li>
+        <li>NUMBER: these also have optional min and max attributes that can be used to limit the input given.<br>ex: input type='number' id='age' name='age' min=0 step=1</li>
     </ul>
 
     <hr class="activityBreak">
