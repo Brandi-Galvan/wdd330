@@ -53,6 +53,8 @@ function createTodoItem(todo) {
     todoDiv.appendChild(completeBtn);
     todoDiv.appendChild(todoContent);
     todoDiv.appendChild(deleteBtn);
+
+    return todoDiv;
 }
 
 function addTodoList(todoDiv) {
