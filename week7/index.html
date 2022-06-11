@@ -19,8 +19,46 @@
     <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
     <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/week7/teamActivity.html">Team Activity</a></p>
    
+    <h4 class="listHeader">NTN Chapter 11: Further Functions</h4>
+    <ul class="weeklyNotes">Function Properties and Methods
+        <li>Call and Apply Methods: The call() method can be used to set the value of this inside a function to an object that is provided as the first argument.</li>
+        <li>Custom Properties: There is nothing to stop you adding your own properties to functions in the same way that you can add properties to any object in JavaScript.</li>
+        <li>Memoization: A useful feature of this is that it provides result caching, or memoization.</li>
+        <li>If the function is also assigned to another variable, this variable will maintain the original function definition and not be rewritten.</li>
+        <li>If any properties have previously been set on the function, these will be lost when the function redefines itself.</li>
+        <li>A recursive function is one that invokes itself until a certain condition is met.</li>
+        <li>Creating a Promise: A promise is created using a constructor function. This takes a function called an executor as an argument.</li>
+        <li>Callbacks can be used to build more generalized functions. Instead of having lots of specific functions, one function can be written that accepts a callback.</li>
+        <li>We've just seen that functions can accept another function as an argument (a callback), but they can also return a function.</li>
+        <li>Closures are one of JavaScript’s most powerful features, but they can be difficult to get your head around initially.</li>
+        <li>A closure is a reference to a variable that was created inside the scope of another function, but is then kept alive and used in another part of the program.</li>
+        <li>A closure is formed when the inner function is returned by the outer function, maintaining access to any variables declared inside the enclosing function.</li>
+    </ul>
 
-    
+    <h4 class="listHeader">NTN Chapter 13: AJAX</h4>
+    <p>Ajax is a technique that allows web pages to communicate asynchronously with a server, and it dynamically updates web pages without reloading. This enables data to be sent and received in the background, as well as portions of a page to be updated in response to user events, while the rest of the program continues to run.</p>
+    <ul class="weeklyNotes">
+    Clients and Servers
+        <li>The web of computers known as the internet can be separated into two parts: clients and servers. A client, such as a web browser, will request a resource (usually a web page) from a server, which processes the request and sends back a response to the client.</li>
+        <li>Asynchronous: When a request for data is sent, the program doesn’t have to stop and wait for the response. It can carry on running, waiting for an event to fire when a response is received. By using callbacks to manage this, programs are able to run in an efficient way, avoiding lag as data is transferred back and forth.</li>        
+    The Fetch API
+        <li>The Fetch API uses promises to avoid callback hell, and also streamlines a number of concepts that had become cumbersome when using the XMLHttpRequest object.</li>
+        <li>The fetch() method returns a promise that resolves to the response returned from the URL that was provided as an argument.</li>
+        <li>Some other properties of the Response object are:<br>
+            · headers – A Headers object (see later section) containing any headers associated with the response<br>
+            · url – A string containing the URL of response<br>
+            · redirected – A boolean value that specifies if the response is the result of a redirect<br>
+            · type – A string value of 'basic', 'cors', 'error' or 'opaque'.</li>
+    Sending Information
+        <li>We can also use Ajax to send information. This can be a variety of formats, but is usually a JSON string.</li>
+    FormData
+        <li>The Fetch API includes the FormData interface, which makes it much easier to submit information in forms using Ajax.</li>
+        <li>A FormData instance is created using a constructor function: const data = new FormData();</li>
+    A Living Standard
+        <li>The Fetch API is, at the time of writing, what is known as a 'living standard', which means that the specification is being developed 'in the wild'. This means that, despite it being available to use, it’s still subject to change as developers, browser vendors and end-users provide feedback about how it works.</li>
+        <li>If you don't want to 'live on the edge', you could consider using a library to take care of Ajax requests.</li>
+        
+    </ul>
 </main>
 <footer>
         &copy; <span id="currentYear"></span> | Brandi Glover | Gilbert, AZ
