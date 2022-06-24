@@ -62,6 +62,24 @@
         <li>There are going to be more updates to HTML5 than previously. There is already a HTML5.1 and 5.2 is already in development.</li>
         The data- Attribute
         <li>The data- attribute is a way of embedding data in a web page using custom attributes that are ignored by the browser.</li>
+        <li>They're also private to a page, so are not intended to be used by an external service - their sole purpose is to be used by a JavaScript program.</li>
+        <li>So, this means they're perfect for adding data that can be used as a hook that the program utilizes to access information about a particular element on the page.</li>
+        <li>The names of these attributes can be decided by the developer, but they must use the following format:<br>· Start with data-<br>·Contain only lowercase letters, numbers, dots, colons, or underscores.<br>·Include an optional string value.</li>
+        <li>An example of this could be:<br>data-powers = 'flight superSpeed'<br>data-rating = '5'<br>data-max-length = '32'</li>
+        <li>You can then use the attributes to identify particular elements. For example, you could final all the elements that have a data-rating value of 3 or more.</li>
+        HTML5 APIs
+        <li>The HTML5 specification contains a number of APIS that helps to gain access to hardware, such as cameras, batteries, geolocation, and the graphics card.</li>
+        HTML5 Web Storage 
+        <li>The web storage API provides a key-value store on the client's computer that is similar to using cookies but has fewer restrictions, more storage capacity, and is generally easier to use.</li>
+        <li>If a browser supports the Web Storage API, the window object will have a property called localStorage, which is a native object with a number of properties and methods used to store data.</li>
+        <li>The information is saved in the form of key-value pairs, and the values can only be strings.</li>
+        Geolocation 
+        <li>The Geolocation API is used to obtain the geographical position of the device. This means it can be used to find the user's exact location, then link to nearby places or measure the speed at which the user is moving.</li>
+        <li>If geolocation is available, it will be a property of the navigator object that we met in Chapter 9. This property has a method called getCurrentPosition() that will return a position object to a specified callback function, called youAreHere() in the example:<br>navigator.geolocation.getCurrentPosition(youAreHere);</li>
+        <li>Additionally, the geolocation object has a watchPosition() method that will call a callback function every time the position of the device is updated.</li>
+        Web Workers
+        <li>Web Workers allow processes to be run in the background, adding support for concurrency in JavaScript.</li>
+        <li>To get started, use the Worker() constructor function to create a new worker:<br>const worker = new Worker('task.js');</li>
     </ul>
 
     <hr class="activityBreak">
