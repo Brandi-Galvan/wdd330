@@ -28,7 +28,34 @@
         <li>For environments (like Node.js) that don't have a window object, they will still have a global object.<br>For example: const global = this; is a way of assigning the variable global to the global object.</li>
         <li>Global variables that are created without using the const, let, or var keywords. Global variables can be accessed in all part of the program.</li>
         <li>Global variables are actual properties of a global object. The global object is the window object. So any global variable created is actually a property of the window object.<br>For example: x = 6; <b>the global variable is created</b><br>window.x <b>the same variable can be accessed as a property of the window object.</b><br>window.x === x; <b>Both variables are now exactly the same.</b></li>
+        Browser information
+        <li>The window object has a number of properties and methods that provide information about the user's browser.</li>
+        <li>The window.location property is an object that contains information about the URL of the current page.</li>
+        <li>The href property returns the full URL as a strong. You can also change the URL using this property.</li>
+        <li>The protocol property returns a string describing the protocol used.</li>
+        <li>The host property returns a string describing the domain of the current URL and the port number.</li>
+        <li>The hostname property returns a string describing the domain of the current URL.</li>
+        <li>The port property returns a string describing the port number, although it will return an empty string if the port is not explicitly stated in the URL.</li>
+        <li>The pathname property returns a string of the path that follows the domain.</li>
+        <li>The search property returns a string that starts with a "?" followed by the query string parameters.</li>
+        The Browser History
+        <li>The window.history property can be used to access information about any previously visited pages in the current browser session. Avoid confusing this with the new HTML5 History API.</li>
+        <li>The window.history.length property shows how many pages have been visited before arriving at the current page.</li>
+        <li>The window.history.go() method can be used to go to a specific page, where 0 is the current page.<br>For example: window.history.go(1); (this goes forward 1 page)<br>window.history.go(0); (this reloads the current page)<br>window.history.go(-1); (this goes back 1 page).</li>
+        Controlling Windows
+        <li>A new window can be opened using the window.opn() method.</li>
+        <li>This takes the URL of the page to be opened as its first parameter, the window title as its second parameter, and a list of attributes as the third parameter. This can also be assigned to a variable, so the window can then be referenced later in the code:<br>const pop = window.opn('https://sitepoint.com','SitePoint','width=400,height=400,resizable=yes');</li>
+        Screen information
+        <li>The window,screen object contains information about the screen the browser is displayed on. You can find the heigh and width of the screen in pixels using the height and width properties.</li>
+        <li>The availaHeight and availWidth can be used to find the heigh and width of the screen, excluding any operating system menus.</li>
+        <li>The colorDepth property can be used to find the color bit depth of the user's monitor, although there are few use cases for doing this other than collecting user statistics.</li>
+        The Document Object 
+        <li>Each window object contains a document object. This object has properties and methods that deal with the page that has been loaded into the window.</li>
+        <li>The write() method simply writes a string of text to the page. If a page has already loaded, it will completely replace the current document.</li>
+        <li>Another option is to include the HTML in the string and this will become part of the DOM tree.<br>For example: document.write('< h1 > Hellow, world!</ h1 >');</li>
+        <li>You can also use the document.write() method inside script tags within an HTML element on a page. This will not overwrite everything else on the page.</li>
         
+
     </ul>
 
     <h4 class="listHeader">NTN Ch 14: HTML 5 APIs</h4>
