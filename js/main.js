@@ -39,6 +39,10 @@ const links = [
   label: "Week 10 notes",
   url: "week10/index.html",
 },
+{
+  label: "Blcok 2 Challenge",
+  url: "block2/index.html",
+},
 ];
 
 links.forEach((element) => {
