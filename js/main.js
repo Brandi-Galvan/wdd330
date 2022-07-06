@@ -41,7 +41,7 @@ const links = [
 },
 {
   label: "Block 2 Challenge",
-  url: "block2/index.html",
+  url: "week11/index.html",
 },
 ];
 
