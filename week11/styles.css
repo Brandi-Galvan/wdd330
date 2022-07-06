@@ -115,8 +115,10 @@ h3, h4 {
     margin: 5px;
 }
 
+
+/* GLAZE APP */
 .glazeOptions {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-row-gap: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 5px;
 }
