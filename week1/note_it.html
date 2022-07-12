@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible" data-js-focus-visible>
+<head>
+    <title>Note It Activity | Brandi Glover WDD330</title>
+    <script>
+        function saveNote(){
+            var currentDateAndTime = new Date()
+            var aNoteDescription = document.getElementById("description_input").value 
+            var aNoteText = document.getElementById("note_editor").value 
+            var aCompleteNote = currentDateAndTime.toLocaleString()
+                                                            +"--"+ aNoteDescription
+            aCompleteNote +="<p>" + aNoteText + "</p>"
+            
+            var storedNotesString = localeStoraget.getItem("all_notes")
+            var allNotes = JSON.parse(storedNotesString)
+            if(allNotes == null){
+                allNotes=[]
+            }
+            allNotes.push(aCompleteNote)
+            var allNotesString=JSON.stringify(allNotes)
+            localStorage.setItem("all_notes", allNotesString)
+        }
+    </script>
+    <style>
+
+        .activityLink {
+            text-decoration: none;
+            font-weight:bold;
+            color: #144106;
+        }
+        h1 {
+            margin-bottom:-15px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <section id="note_entry_area">
+        <h1>Note It!</h1>
+        <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
+        Description: <input id="description_input"></input>
+        <textarea id="note_editor" placeholder="'Note it down. Don't forget."></textarea>
+        <button onclick="saveNote()">Save</button>
+    </section>
+    <section id="all_notes_display"></section>
+
+
+</body>
+</html>

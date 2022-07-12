@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible" data-js-focus-visible>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Brandi Glover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for WDD330 course by Brandi Glover">
+    <link href="../css/small.css" rel="stylesheet">
+    <link href="..css/normalize.css" rel="stylesheet">
+    <title>Week 10 | Brandi Glover Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Brandi Glover</h1>
+    </header>
+<main>
+    <h2>WDD 330 Week 10</h2>
+    <p>This Week's Activities: <a class="activityLink" href="https://brandi-galvan.github.io/wdd330/week10/teamActivity.html">Team Activity</a> | <a class="activityLink" href="https://brandi-galvan.github.io/wdd330/week10/fruit-start.html">Fruit</a> | <a class="activityLink" href="https://brandi-galvan.github.io/wdd330/week10/driversLicense.html">Driver's License</a> | <a class="activityLink" href="https://brandi-galvan.github.io/wdd330/week10/email.html">Email Form</a>
+    <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
+    
+    <h3>Notes for this week</h3>
+
+    <h4 class="listHeader"><a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation">MDN: Client-Side Form Validation</a></h4>
+    <ul class="weeklyNotes">
+        What is form validation?
+        <li>Form validation is when you enter data and the browser and/or the web server will check to see that the data is in the correct format and within the constraints set by the application.</li>
+        <li>Validation done in the browser is called client-side validation.</li>
+        <li>If formatted correctly, the application allows the data to be submitted to the server and (usually) saved in a database.</li>
+        <li>Alternatively, if the information is not correctly formatted, it gives the user an error message explaining what needs to be corrected, and lets them try again.</li>
+        <li>We want to make filling out web forms as easy as possible, three main reasons:<br>·We want to get the right data, in the right format<br>·We want to protect our users' data.<br>·We want to protect ourselves.</li>
+        Different types of client-side validation
+        <li>There are two different typies of client-side validation that you'll encounter on the web:<br>·Built-in-form validation<br>·JavaScript</li>
+        Using Built-in form Validation
+        <li>One of the most significant features of HTML5 form controls is the ability to validate most user data without relying on JavaScript.</li>
+        <li>This is done by using validation attributes on form elements, to recap:<br>·required<br>·minlength and maxlength<br>·min and max<br>·type<br>·pattern</li>
+        Validating against a regular expression
+        <li>Another useful validation feature is the pattern attribute, which expects a regular expression as its value.</li>
+        <li>Note: the textarea element doesn't support the pattern attribute.</li>
+    </ul>
+
+    <h4 class="listHeader"><a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch">MDN: Using the Fetch API</a></h4>
+    <ul class="weeklyNotes">
+        <li>The fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.</li>
+        <li>It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.</li>        
+        Uploading a File 
+        <li>Files can be uploaded using an HTML: input type="file" input (element, FormData() and fetch().)</li>
+        Uploading Multiple Files
+        <li>Files can be uploaded using an HTML: input type="file" multiple (input element, FormData() and fetch().)</li>
+        Processing a text file line by line
+        <li>If you want to featch a text file and process it line by line, it is up to you to handle these complications.</li>
+        Checking that the fetch was successful
+        <li>A fetch() promise will reject with a TypeError when network error is encountered or CORS is misconfigured on the server-side, although this usually means permission issues or similar</li>
+        Supplying your own request object
+        <li>Instead of passing a path to the resource you want to request into the fetch() call, you can create a request object using the Request() constructor, and pass that in as a fetch() method argument</li>
+        Headers
+        <li>The Headers interface allows you to create your own headers object via the Headers() constructor.</li>
+    </ul>
+
+    <hr class="activityBreak">
+
+    <h3>Questions</h3>
+    <ul class="weeklyNotes">
+        <li>First Question</li>
+    </ul>
+    
+</main>
+<footer>
+        &copy; <span id="currentYear"></span> | Brandi Glover | Gilbert, AZ
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/footer.js"></script>
+</body>
+</html>

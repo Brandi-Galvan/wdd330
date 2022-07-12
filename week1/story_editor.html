@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible" data-js-focus-visible>
+<head>
+    <title>Story Editor Activity | Brandi Glover WDD330</title>
+    <script>
+        function loadStory(){
+            var storyName = document.getElementbyID("name_input").value
+            var storyHTML = localStorage.getItem(storyName)
+            document.getElementbyID("story_editor").value = storyHTML
+        }
+        function saveStory(){
+            var storyName = document.getElementById("name_input").value
+            var storyHTML = document.getElementById("story_editor").value
+            localStorage.setItem(storyName,storyHTML)
+        }
+        function displayStory(){
+            var storyHTML = document.getElementById("story_editor").value
+            document.getElementById("story_display").innerHTML = storyHTML
+        }
+    </script>
+    <style>
+        textarea {
+            width:800px;
+            height:250px;
+            background-color:lightyellow;
+        }
+        button {
+            border-radius: 5px;
+            background-color: #fff;
+            margin: 5px 0px;
+            border: 1px solid #000;
+            padding: 4px 6px;
+        }
+        .activityLink {
+            text-decoration: none;
+            font-weight:bold;
+            color: #144106;
+        }
+        h1 {
+            margin-bottom:-15px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>Story Editor</h1>
+    <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
+    Story Name:<input id=name_input></input>
+    <section>
+        <button onclick="loadStory()">Find and Edit It</button>
+        <button onclick="saveStory()">Save It</button>
+        <button onclick="displayStory()">Display It</button>
+    </section>
+    <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
+    <section id="story_display"></section>
+
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible" data-js-focus-visible>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Brandi Glover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for WDD330 course by Brandi Glover">
+    <link href="../css/small.css" rel="stylesheet">
+    <link href="..css/normalize.css" rel="stylesheet">
+    <title>Week 4 | Brandi Glover Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1><a href="https://brandi-galvan.github.io/wdd330/">Brandi Glover</a></h1>
+    </header>
+<main>
+    <h2>WDD 330 Week 4</h2>
+    <p>This Week's Activities: <a class="activityLink" href="../week4/teamActivity.html">Team Activity</a> | <a class="activityLink" href="../week4/search.html">A Searching Example</a>
+    <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
+    <h3>Notes for this week</h3>
+    <h4 class="listHeader">NTN Chapter 8: Forms</h4>
+    <ul class="weeklyNotes"> Forms
+        <li>Forms are made up of a form element that contains form controls such as input fields, select menus and buttons</li>
+        <li>Traditionally, when a form is submitted the information would be sent to a server where the information would be processed using a 'back end' language such as PHP or Ruby.</li>
+        <li>It's becoming more possible to process the information in a form on the 'front end' before it is sent to the server.</li>
+    </ul>
+    <ul class="weeklyNotes">Input Fields
+        <li>Some common types of form control are:<br>Input fields: including text, passwords, check boxes, radio buttons, and file uploads.<br>Select menus: for drop-down lists of options.<br>Textarea elements: for longer text entry.<br>Button elements: for submitting and resetting forms.</li>
+        <li> TEXT: The default type of input field is text. The type='text' attribute isn't required but it is advisable to use it as it makes the intended purpose of the field explicit.<br> ex: input type='text' id ='donation-amount' name='donationAmount' value='10'</li>
+        <li>PASSWORD: is used to enter passwords or secret information. It looks like type='password'<br> ex: input type='password' name='realName' id='realName'</li>
+        <li>CHECKBOX: are creating using input fields type='checkbox'. They are used to select different options that can be checked (true) or left unchecked (false)<br> ex: input type='checkbox' id='flight' value='Flight' name='powers'</li>
+        <li>RADIO: these are created using input fields with type='radio'. They allow users to check an option as true but they provide an exclusive choise of options so only one option can be selected.<br>ex: input type='radio' name='category' value='Hero' id='hero'</li>
+        <li>HIDDEN: These are not displayed by the browser, but have a 'value' attribute that can contain information that is submitted with the form. type='hidden'</li>
+        <li>FILE INPUT: These are used to upload files and most browsers will provide a brose button or similar that lets users select a file from their file system. type='file'</li>
+        <li>OTHER: There are lots of new input types included, such as 'number', 'tel', and 'color'.</li>
+        <li>NUMBER: these also have optional min and max attributes that can be used to limit the input given.<br>ex: input type='number' id='age' name='age' min=0 step=1</li>
+    </ul>
+
+    <hr class="activityBreak">
+    <h3>Questions</h3>
+    <ul class="weeklyNotes">
+        <li>First Question</li>
+    </ul>
+</main>
+<footer>
+        &copy; <span id="currentYear"></span> | Brandi Glover | Gilbert, AZ
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/footer.js"></script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="js-focus-visible" data-js-focus-visible>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Brandi Glover">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio for WDD330 course by Brandi Glover">
+    <link href="../css/small.css" rel="stylesheet">
+    <link href="..css/normalize.css" rel="stylesheet">
+    <title>Week 2 | Brandi Glover Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1><a href="https://brandi-galvan.github.io/wdd330/">Brandi Glover</a></h1>
+    </header>
+<main>
+    <h2>WDD 330 Week 2</h2>
+    <p>This Week's Activities: <a class="activityLink" href="../week2/teamActivity.html">Team Activity</a>
+    <p><a class="activityLink" href="https://brandi-galvan.github.io/wdd330/">Back to Portfolio</a></p>
+    <h3>Notes for this week</h3>
+    <h4 class="listHeader">Javascript: Novice to Ninja Chapter 2: Programming Basics</h4>
+    <ul class="weeklyNotes">
+        <li><b>Comments:</b></li>
+        <li>Single line comments start with // and finishes at the end of the line</li>
+        <li>Multi-line comments start with /* and finishes with */</li>
+        <li><b>JavaScript Grammar:</b></li>
+        <li>It's considered best practice to combine the two and write each statement on a new line, terminated by a semi-colon, like so:<br>
+        const message = 'Hello World!';<br>
+        alert(message);</li>
+        <li>A block is a series of statements that are collected together inside curly braces:<br>
+        {<br>
+        // this is a block containing 2 statements<br>
+        const message = 'Hello!';<br>
+        alert(message);<br>
+        }<br></li>
+        <li><b>Reserved Words:</b></li>
+        <li>The following words are reserved for JavaScript language and cannot be used to name variables:<br>abstract, await, boolean, break, byte, case, catch, char, class, const, continue, debugger, default, delete, do, double, else, enum, export, extends, false, final, finally, float, for, function, goto, if, implements, import, in instanceof, int, interface, let, long, native, new, null, package, private, protected, public, return, short, static, super, switch, synchronized, this, throw, throws, transient, true, try, typeof, var, volatile, void, while, with, yield</li>
+        <li>These words are not reserved but really should have been:<br>undefined, NaN, Infinity</li>
+        <li><b>Primitive Date Types:</b></li>
+        <li>JavaScript has seven different data types. Six of them are primitive data types and are: string, symbol, number, boolean, undefined, and null</li>
+        <li>Any value that isn't listed above is just an object. That includes arrays, functions, and object literals.</li>
+        <li><b>Variables:</b></li>
+        <li>It may seem like a restriction to use const, but it actually helps make your programs more predictable if the assignment to variables can't change.</li>
+        <li>variables declared using let and const have block scope, which is discussed in more detail below.</li>
+        <li><b>Scope:</b></li>
+        <li>Global Scope is any variable that is declared outside of a block. This means it is accessible everywhere in the program. This is not considered good practice.</li>
+        <li>Local Scope is any variable that is defined inside a block using let or const. They will only be available inside that block and not be accessible outside of that block.</li>
+        <li><b>Naming Constants + Variables:</b></li>
+        <li>Constant and variable names can start with any upper or lower-case letter, an underscore, or dollar sign. They can also contain numbers, but cannot start with them.</li>
+        <li>When using multiple words for constant and variable names there are two conventions:<br>
+        Camel case starts with a lowercase letter and then each new word is capitalized: firstNameAndLastName<br>
+        Underscore separates each new word with an underscore: first_name_and_last_name</li>
+    </ul>
+    <h4 class="listHeader">Javascript: Novice to Ninja Chapter 3: Arrays, Logic, and Loops</h4>
+    <ul class="weeklyNotes">
+        <li>Data structures used in JavaScript to store lists of values are called arrays, sets, and maps.</li>
+        <li>An ARRAY is an ordered list of values.</li>
+        <li>The delete operator will remove an item from an array: delete avengers[3];</li>
+        <li>Destructuring an array is the concept of taking values out of an array and presentig them as individual values. ex: const[x,y] = [1,2];</li>
+        <li>To remove the last item from an array we can use the pop() method: avengers.pop()</li>
+        <li>The shift method works in a similar way but it removes the first item in the array: avengers.shift();</li>
+        <li>The push method appends a new value to the end of the array: avengers.push('Thor');</li>
+        <li>The unshift method is similar to the push but it adds a new item to the beginning of the array: avengers.unshift('Captain America');</li>
+        <li>You can MERGE arrays by using the concat() method: avengers.concat(['Hulk','Hawkeye','Black Widow']);</li>
+        <li>The join() methos can be used to turn the array into a string that comprises all the items in the array, separated by commas: avengers.join();<br> You can also choose a seperator other than a comma by placing it inside the parentheses: avengers.join('&');</li>
+        <li>Values can be placed into a set using the add method: list.add(1);</li>
+        <li>Multiple items can be placed in a set by repeating the add() method: lits.add(2).add(3).add(4);</li>
+    </ul>
+    <h4 class="listHeader">Javascript: Novice to Ninja Chapter 4: Functions</h4>
+    <ul class="weeklyNotes">
+        <li>A function is a chunk of code that can be referenced by a name, and is almost like a small, self-contained mini program.</li>
+        
+    </ul>
+    
+    <hr class="activityBreak">
+    <h3>Questions</h3>
+    <ul class="weeklyNotes">
+        <li>First Question</li>
+    </ul>
+</main>
+<footer>
+        &copy; <span id="currentYear"></span> | Brandi Glover | Gilbert, AZ
+</footer>
+<script src="../js/main.js"></script>
+<script src="../js/footer.js"></script>
+</body>
+</html>
