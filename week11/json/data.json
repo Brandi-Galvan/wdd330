@@ -1,0 +1,24 @@
+{
+    "glaze": [
+      {
+        "name": "Sea Glass Glaze",
+        "color": "./images/sea-glass.jpeg"
+      },
+      {
+        "name": "Sand",
+        "color": "./images/sand.jpeg"
+      },
+      {
+        "name": "Cinammon",
+        "color": "./images/cinnamon.jpeg"
+      },
+      {
+        "name": "Teal",
+        "color": "./images/med-teal.jpeg"
+      },
+      {
+        "name": "Medium Blue",
+        "color": "./images/med-blue.jpeg"
+      }
+    ]
+  }
