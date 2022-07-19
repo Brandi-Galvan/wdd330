@@ -2,14 +2,23 @@ const requestURL = 'https://brandi-galvan.github.io/wdd330/week11/json/data.json
 
 
 fetch(requestURL)
-    .then (response => response.json())
-    .then (data => {
-        console.log(data)
-    })
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (data) {
+    appendData(data);
+  })
+  .catch(function (err) {
+    console.log(err);
+  });
+
+  var mainImage = document.getElementById("vaseBase");
+
+  for (var i = 0; i < data.length; i++) {
+  }
+
+  mainContainer.appendChild(div);
         
-        
-    function seaGlass() {
-    document.querySelector("#vaseBase").src = data.color1;
-    var image = document.getElementById('vaseBase');
-    image.src = glaze.color1;
-}
+    // function seaGlass() {
+    // document.getElementById("vaseBase").src = (response.color1);}
+    // when the picture of the glaze is clicked, the vase image changes to a picture with corresponding glaze.
