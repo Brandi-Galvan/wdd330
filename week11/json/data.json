@@ -1,24 +1,8 @@
 {
-    "glaze": [
-      {
-        "name": "Sea Glass Glaze",
-        "color": "./images/sea-glass.jpeg"
-      },
-      {
-        "name": "Sand",
-        "color": "./images/sand.jpeg"
-      },
-      {
-        "name": "Cinammon",
-        "color": "./images/cinnamon.jpeg"
-      },
-      {
-        "name": "Teal",
-        "color": "./images/med-teal.jpeg"
-      },
-      {
-        "name": "Medium Blue",
-        "color": "./images/med-blue.jpeg"
-      }
-    ]
-  }
+  "color1": "./images/sea-glass.jpeg",
+  "color2": "./images/sand.jpeg",
+  "color3": "./images/cinnamon.jpeg",
+  "color4": "./images/med-teal.jpeg",
+  "color5": "./images/med-blue.jpeg"
+
+}

@@ -16,38 +16,32 @@
 <main>
     <h2>Galvan Ceramics Glazes</h2>
     
-    <img src="./images/vase-base.png" alt="vase base with white glaze" height="350" class="vaseBase">
+    <img src="./images/vase-base.png" alt="vase base with white glaze" height="350" id="vaseBase">
     
     <h3>Choose Your Glaze</h3>
     <div class="glazeOptions">
         <div id="vase-sea-glass">
-            <img src="./images/sea-glass.jpeg" class="glazeTile" width="100" alt="sea glass glaze tile">
+            <img src="./images/sea-glass.jpeg" class="glazeTile" width="100" alt="sea glass glaze tile" onclick="seaGlass();">
         </div>
         <div id="vase-sand">
-            <img src="./images/sand.jpeg" class="glazeTile" width="100" alt="sand glaze tile">
+            <img src="./images/sand.jpeg" class="glazeTile" width="100" alt="sand glaze tile" onclick="sand();">
         </div>
         <div id="vase-cinammon">
-            <img src="./images/cinnamon.jpeg" class="glazeTile" width="100" alt="cinammon glaze tile">
+            <img src="./images/cinnamon.jpeg" class="glazeTile" width="100" alt="cinammon glaze tile" onclick="cinnamon();">
         </div>
         <div id="med-teal">
-            <img src="./images/med-teal.jpeg" class="glazeTile" width="100" alt="mediterranean glaze tile">
+            <img src="./images/med-teal.jpeg" class="glazeTile" width="100" alt="mediterranean glaze tile" onclick="teal();">
         </div>
         <div id="med-blue">
-            <img src="./images/med-blue.jpeg" class="glazeTile" width="100" alt="medium blue glaze tile">
+            <img src="./images/med-blue.jpeg" class="glazeTile" width="100" alt="medium blue glaze tile" onclick="medBlue();">
         </div>
     </div>
-   
-
-    <h3>Questions</h3>
-    <ul class="weeklyNotes">
-        <li>First Question</li>
-    </ul>
     
 </main>
 <footer>
         &copy; <span id="currentYear"></span> | Brandi Glover | Gilbert, AZ
 </footer>
-<script src="../js/main.js"></script>
 <script src="../js/footer.js"></script>
+<script src="./js/potGlaze.js"></script>
 </body>
 </html>
