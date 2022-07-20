@@ -6,19 +6,26 @@ fetch(requestURL)
     return response.json();
   })
   .then(function (data) {
-    appendData(data);
+    display_image(data.message);
   })
-  .catch(function (err) {
-    console.log(err);
-  });
 
-  var mainImage = document.getElementById("vaseBase");
 
-  for (var i = 0; i < data.length; i++) {
-  }
+function seaGlass() {
+document.getElementById('vaseBase').src="./images/vase-sea-glass.png";
+}
 
-  mainContainer.appendChild(div);
-        
-    // function seaGlass() {
-    // document.getElementById("vaseBase").src = (response.color1);}
-    // when the picture of the glaze is clicked, the vase image changes to a picture with corresponding glaze.
+function sand() {
+    document.getElementById('vaseBase').src="./images/vase-sand.png";
+    }
+
+function cinnamon() {
+    document.getElementById('vaseBase').src="./images/vase-cinnamon.png";
+    }
+
+function teal() {
+    document.getElementById('vaseBase').src="./images/vase-med-teal.png";
+    }
+
+function medBlue() {
+    document.getElementById('vaseBase').src="./images/vase-med-blue.png";
+    }
